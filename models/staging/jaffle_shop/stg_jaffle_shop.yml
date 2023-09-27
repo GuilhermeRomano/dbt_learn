@@ -14,6 +14,10 @@ models:
         tests:
           - unique
           - not_null
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
           - relationships:
               field: customer_id 
               to: ref('stg_customers')
